@@ -1,0 +1,5 @@
+/* Minificar es eliminar el código irrelevante*/
+h1{border:1px solid brown;color:#000;background-color:orange}
+.btn.btn-warning:hover{
+    background-color: greenyellow;
+}
