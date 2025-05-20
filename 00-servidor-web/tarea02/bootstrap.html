@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Réplica</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap CSS para cargar íconos en el footer -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+    <!-- Estilos personalizados usando CSS -->
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-black bg-black py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/09/Spotify_Logo_RGB_White.png"
+                    alt="Spotify" width="120" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Premium</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Ayuda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Descargar</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Registrarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Iniciar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="hero-section-modern text-white d-flex align-items-center py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Texto a la izquierda -->
+                <div class="col-md-6">
+                    <h1 class="display-4 fw-bold mb-4">
+                        Disfruta mucho más de tu música con Premium Individual.
+                    </h1>
+                    <p class="lead mb-2">
+                        Disfruta de música sin interrupciones con Spotify Premium.
+                    </p>
+                    <p class="mb-4">
+                        A partir de solo USD 6.49***. Cancela cuando quieras.
+                    </p>
+
+                    <!-- Botones -->
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <a href="#" class="btn btn-lg btn-premium-individual">Obtener Premium Individual</a>
+                        <a href="#" class="btn btn-lg btn-outline-light">Ver todos los planes</a>
+                    </div>
+
+                    <!-- Términos -->
+                    <small class="text-white">
+                        <a href="#" class="text-decoration-underline text-white">Se aplican Términos.</a><br />
+                        *** + impuestos aplicables.
+                    </small>
+                </div>
+
+                <!-- Imagen inclinada a la derecha -->
+                <div class="col-md-6 d-none d-md-block text-end">
+                    <img src="https://preview.redd.it/s0d7qfyvv3lb1.jpg?auto=webp&s=a330409b9553cebba7571f7be612241f86db7686"
+                        alt="Imagen decorativa" class="img-fluid rotated-image" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Comparación de planes -->
+    <section class="py-5 text-white bg-grayf">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-3">Siente la diferencia</h2>
+            <p class="mb-5">
+                Pásate a Premium y disfruta del control total de lo que escuchas.
+                Cancela cuando quieras.
+            </p>
+
+            <div class="table-responsive">
+                <table class="table text-white text-start align-middle">
+                    <thead>
+                        <tr>
+                            <th>Qué incluye</th>
+                            <th class="text-center">Plan Spotify Free</th>
+                            <th class="text-center">Planes Premium de Spotify</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#">Escucha tu música favorita sin anuncios</a></td>
+                            <td class="text-center">—</td>
+                            <td class="text-center">✔</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">Descarga de canciones para disfrutarlas sin conexión</a>
+                            </td>
+                            <td class="text-center">—</td>
+                            <td class="text-center">✔</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Escucha canciones en cualquier orden</a></td>
+                            <td class="text-center">—</td>
+                            <td class="text-center">✔</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Calidad del audio alta</a></td>
+                            <td class="text-center">—</td>
+                            <td class="text-center">✔</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">Escucha lo que quieras con tus amigos, en tiempo real</a>
+                            </td>
+                            <td class="text-center">—</td>
+                            <td class="text-center">✔</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Organiza la cola de reproducción</a></td>
+                            <td class="text-center">—</td>
+                            <td class="text-center">✔</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Info Planes -->
+    <section class="py-5 bg-grayf text-white text-center">
+        <div class="container">
+            <!-- Título y subtítulo -->
+            <h2 class="fw-bold mb-3">Planes accesibles para cada situación</h2>
+            <p class="mb-4">
+                Elige un plan Premium y escucha música sin anuncios y sin límites en
+                tu teléfono, altavoz y otros dispositivos. Accede a varias formas de
+                pago. Cancela cuando quieras.
+            </p>
+
+            <!-- Logos de métodos de pago -->
+            <div class="d-flex justify-content-center align-items-center gap-3 mb-5 flex-wrap">
+                <div class="metodo-pago">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa"
+                        height="25" />
+                </div>
+                <div class="metodo-pago">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard"
+                        height="25" />
+                </div>
+                <div class="metodo-pago">
+                    <img src="https://w7.pngwing.com/pngs/1002/997/png-transparent-amex-payment-method-card-icon-thumbnail.png"
+                        alt="Amex" height="25" />
+                </div>
+                <div class="metodo-pago">
+                    <img src="https://1000marcas.net/wp-content/uploads/2020/08/Diners-Club-International-Logo-1978.jpg"
+                        alt="Diners Club" height="25" />
+                </div>
+                <div class="metodo-pago">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal"
+                        height="25" />
+                </div>
+            </div>
+
+            <!-- Subtítulo y beneficios -->
+            <div class="row justify-content-center align-items-start">
+                <!-- Subtítulo -->
+                <div class="col-md-6 text-center mb-4">
+                    <h3 class="fw-bold">Todos los planes Premium incluyen lo siguiente:</h3>
+                </div>
+
+                <!-- Lista -->
+                <div class="col-md-6 text-md-start">
+                    <ul class="list-unstyled fs-5">
+                        <li>✓ Escucha música sin anuncios</li>
+                        <li>✓ Descarga contenido para escuchar en modo offline</li>
+                        <li>✓ Reproduce canciones en el orden que quieras</li>
+                        <li>✓ Disfruta de audio de alta calidad</li>
+                        <li>✓ Escucha contenido con tus personas favoritas en tiempo real</li>
+                        <li>✓ Organiza la fila de reproducción</li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+
+    <!-- Seccion Tarjetas de planes -->
+    <section class="py-5 bg-grayf text-white">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- Tarjeta 1: Individual -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 bg-dark text-white border-0 rounded-4 p-4">
+                        <div class="mb-2"><i class="bi bi-spotify"></i> Premium</div>
+                        <h5 class="text-pink fw-bold">Individual</h5>
+                        <p>USD 6.49*** al mes</p>
+                        <hr class="border-secondary">
+                        <ul class="premium-benefits list-unstyled small mb-4">
+                            <li>1 cuenta Premium</li>
+                            <li>Cancela cuando quieras</li>
+                        </ul>
+                        <a href="#" class="btn btn-pink rounded-pill w-100">Obtener Premium Individual</a>
+                        <small class="d-block mt-3 text-white text-center">
+                            <a href="#" class="text-decoration-underline text-white">Se aplican Términos.</a><br>
+                            *** + impuestos aplicables.
+                        </small>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Estudiantes -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 bg-dark text-white border-0 rounded-4 p-4">
+                        <div class="mb-2"><i class="bi bi-spotify"></i> Premium</div>
+                        <h5 class="text-purple fw-bold">Estudiantes</h5>
+                        <p>USD 3.49*** al mes</p>
+                        <hr class="border-secondary">
+                        <ul class="premium-benefits list-unstyled small mb-4">
+                            <li>1 cuenta Premium verificada</li>
+                            <li>Descuento para estudiantes que cumplen con los requisitos</li>
+                            <li>Cancela cuando quieras</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Duo -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 bg-dark text-white border-0 rounded-4 p-4">
+                        <div class="mb-2"><i class="bi bi-spotify"></i> Premium</div>
+                        <h5 class="text-warning fw-bold">Duo</h5>
+                        <p>USD 7.99*** al mes</p>
+                        <hr class="border-secondary">
+                        <ul class="premium-benefits list-unstyled small mb-4">
+                            <li>2 cuentas Premium</li>
+                            <li>Cancela cuando quieras</li>
+                        </ul>
+                        <a href="#" class="btn btn-warning rounded-pill w-100">Obtener Premium Duo</a>
+                        <small class="d-block mt-3 text-white text-center">
+                            Para parejas que vivan en el mismo domicilio.
+                            <a href="#" class="text-decoration-underline text-white">Se aplican Términos.</a><br>
+                            *** + impuestos aplicables.
+                        </small>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4: Familiar -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 bg-dark text-white border-0 rounded-4 p-4">
+                        <div class="mb-2"><i class="bi bi-spotify"></i> Premium</div>
+                        <h5 class="text-info fw-bold">Familiar</h5>
+                        <p>USD 9.99*** al mes</p>
+                        <hr class="border-secondary">
+                        <ul class="premium-benefits list-unstyled small mb-4">
+                            <li>Hasta 4 cuentas Premium</li>
+                            <li>Controla el contenido explícito</li>
+                            <li>Opción de cuentas adicionales</li>
+                            <li>Cancela cuando quieras</li>
+                        </ul>
+                        <a href="#" class="btn btn-info rounded-pill w-100">Obtener Premium Familiar</a>
+                        <small class="d-block mt-3 text-white text-center">
+                            Para hasta 4 miembros de tu familia que vivan en el mismo domicilio.
+                            <a href="#" class="text-decoration-underline text-white">Se aplican Términos.</a><br>
+                            *** + impuestos aplicables.
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Acordeon-->
+    <section class="py-5 bg-grayf text-white">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-3">¿Tienes alguna pregunta?</h2>
+            <p class="text-center text-white">Tenemos las respuestas.<br>
+                Encuentra más respuestas en nuestro <a href="#" class="text-decoration-underline text-white">sitio de
+                    ayuda</a>.
+            </p>
+
+            <div class="accordion mt-4" id="faqAccordion">
+
+                <!-- Ítem 1 -->
+                <div class="accordion-item bg-dark text-white border-0">
+                    <h2 class="accordion-header" id="faq1">
+                        <button class="accordion-button bg-grayf text-white collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapse1">
+                            ¿Cómo funciona la prueba de Spotify Premium?
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p>Si nunca tuviste un plan Premium, puede que cumplas con los requisitos para obtener una
+                                prueba gratuita (o de precio reducido).</p>
+                            <p>Deberás ingresar un método de pago válido para registrarte y utilizar las pruebas.
+                                Utilizaremos esta información para confirmar tu país o región y procesar los pagos si
+                                deseas mantener tu plan Premium luego de que finalice la prueba gratuita.</p>
+                            <p>Te enviaremos un recordatorio 7 días antes de que finalice la prueba. Se aplican
+                                restricciones y términos por país.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ítem 2 -->
+                <div class="accordion-item bg-dark text-white border-0">
+                    <h2 class="accordion-header" id="faq2">
+                        <button class="accordion-button bg-grayf text-white collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapse2">
+                            ¿Cómo cancelo mi plan Premium?
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p>Puedes cancelar tu plan Premium en cualquier momento en línea desde la página de tu
+                                cuenta.</p>
+                            <p>Cuando se cancelan las suscripciones pagas de Premium, permanecen activas hasta la fecha
+                                de facturación siguiente. Luego, la cuenta pasará al servicio gratuito.</p>
+                            <p>Si cancelas durante el período de prueba gratuita, perderás el acceso a los beneficios
+                                Premium de inmediato y la cuenta pasará al servicio gratuito. Las pruebas gratuitas no
+                                se pueden reactivar.</p>
+                            <p>Aun así conservarás todas tus playlists y la música que hayas guardado, y podrás escuchar
+                                contenido con anuncios en nuestro servicio gratuito.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ítem 3 -->
+                <div class="accordion-item bg-dark text-white border-0">
+                    <h2 class="accordion-header" id="faq3">
+                        <button class="accordion-button bg-grayf text-white collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapse3">
+                            ¿Cómo funciona el plan Premium Duo?
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p>Premium Duo es un plan para parejas que conviven. En comparación con tener dos cuentas
+                                Premium Individual de precio completo, también es más barato.
+                                Les pediremos su dirección para asegurarnos de que viven en la misma dirección. Puedes
+                                invitar al otro miembro del plan a unirse en cuanto realices la compra.
+                                Cada miembro obtiene su cuenta individual de Premium y puede escuchar contenido al mismo
+                                tiempo con su propia cuenta.
+                                Toda la música y las playlists guardadas son suyas.
+                                El otro miembro del plan no puede ver lo que estás escuchando.</p>
+                            <p><a href="#" class="text-decoration-underline text-white">Obtén más información</a> sobre
+                                Premium Duo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ítem 4 -->
+                <div class="accordion-item bg-dark text-white border-0">
+                    <h2 class="accordion-header" id="faq4">
+                        <button class="accordion-button bg-grayf text-white collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapse4">
+                            ¿Cómo funciona el plan Premium Familiar?
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p>Premium Familiar es un plan para hasta 4 miembros de la familia que conviven.
+                                Incluso es más barato que pagar el precio completo de todas esas cuentas Premium
+                                Individual.
+                                Les pediremos su dirección para asegurarnos de que viven en la misma.
+                                Puedes invitar a otros miembros a unirse en cuanto realices la compra. Cada miembro
+                                obtiene su cuenta individual de Premium y puede escuchar contenido al mismo tiempo con
+                                su propia cuenta.
+                                Toda la música y las playlists guardadas son suyas.
+                                Los otros miembros del plan no pueden ver lo que estás escuchando.</p>
+                            <p><a href="#" class="text-decoration-underline text-white">Obtén más información</a> sobre
+                                Premium Familiar. También puedes comprar hasta 2 cuentas adicionales si hay más de 4
+                                personas que viven juntas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ítem 5 -->
+                <div class="accordion-item bg-dark text-white border-0">
+                    <h2 class="accordion-header" id="faq5">
+                        <button class="accordion-button bg-grayf text-white collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapse5">
+                            ¿Cómo funciona el plan Premium para Estudiantes?
+                        </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p>Si eres estudiante de una institución de educación superior acreditada y eres mayor de 18
+                                años, entonces sí.
+                                Puedes obtener Premium para Estudiantes por hasta 4 años.</p>
+                            <p><a href="#" class="text-decoration-underline text-white">Obtén más información</a> sobre
+                                Premium para Estudiantes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ítem 6 -->
+                <div class="accordion-item bg-dark text-white border-0">
+                    <h2 class="accordion-header" id="faq6">
+                        <button class="accordion-button bg-grayf text-white collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapse6">
+                            ¿Cuánto cuesta Spotify Premium en Ecuador?
+                        </button>
+                    </h2>
+                    <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p>Los precios de Spotify Premium en Ecuador son diferentes según el plan Premium que
+                                elijas: el plan Premium Individual de Spotify cuesta USD 6.49*** al mes,
+                                el plan Premium Duo cuesta USD 7.99*** al mes, el plan Premium Familiar cuesta USD
+                                9.99*** al mes, el plan Premium para Estudiantes cuesta USD 3.49*** al mes.
+                                Si nunca tuviste un plan Premium, puede que cumplas con los requisitos para una prueba
+                                gratuita (o de precio reducido).
+                                Se aplican restricciones y términos por país.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white pt-5">
+        <div class="container">
+            <div class="row gy-4 justify-content-between">
+
+                <!-- Logo -->
+                <div class="col-md-2">
+                    <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/09/Spotify_Logo_RGB_White.png"
+                        alt="Spotify" width="100">
+                </div>
+
+                <!-- Compañía -->
+                <div class="col-md-2">
+                    <h6 class="text-uppercase text-gray">Compañía</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-white text-decoration-none">Acerca de</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Empleo</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">For the Record</a></li>
+                    </ul>
+                </div>
+
+                <!-- Comunidades -->
+                <div class="col-md-2">
+                    <h6 class="text-uppercase text-gray">Comunidades</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-white text-decoration-none">Para artistas</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Desarrolladores</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Publicidad</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Inversionistas</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Proveedores</a></li>
+                    </ul>
+                </div>
+
+                <!-- Enlaces útiles -->
+                <div class="col-md-2">
+                    <h6 class="text-uppercase text-gray">Enlaces útiles</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-white text-decoration-none">Ayuda</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Reproductor web</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">App móvil gratis</a></li>
+                    </ul>
+                </div>
+
+                <!-- Planes -->
+                <div class="col-md-2">
+                    <h6 class="text-uppercase text-gray">Planes de Spotify</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-white text-decoration-none">Premium Individual</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Premium Duo</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Premium Familiar</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Premium para Estudiantes</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Versión gratuita</a></li>
+                    </ul>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="col-md-2 d-flex gap-2 align-items-start">
+                    <a href="#" class="btn btn-outline-light rounded-circle">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-light rounded-circle">
+                        <i class="bi bi-x"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-light rounded-circle">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Parte final -->
+        <div class="mt-5 pt-3 pb-4">
+            <div
+                class="container d-flex flex-column flex-md-row justify-content-between align-items-center small text-gray">
+
+                <div class="mb-3 mb-md-0">
+                    <a href="#" class="text-gray me-3 text-decoration-none">Legal</a>
+                    <a href="#" class="text-gray me-3 text-decoration-none">Seguridad y Centro de Privacidad</a>
+                    <a href="#" class="text-gray me-3 text-decoration-none">Política de Privacidad</a>
+                    <a href="#" class="text-gray me-3 text-decoration-none">Cookies</a>
+                    <a href="#" class="text-gray me-3 text-decoration-none">Sobre los anuncios</a>
+                    <a href="#" class="text-gray text-decoration-none">Accesibilidad</a>
+                </div>
+
+                <div>
+                    <a href="#" class="text-gray text-decoration-none">
+                        <i class="bi bi-globe"></i> Ecuador
+                    </a>
+                    <span>© 2025 Spotify AB</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

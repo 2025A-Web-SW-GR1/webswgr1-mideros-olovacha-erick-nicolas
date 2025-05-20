@@ -1,0 +1,299 @@
+/* estilos.css */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/*ESTILOS PARA NAVBAR*/
+
+/* Navbar enlaces */
+.navbar .nav-link {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #1db954;
+}
+
+/*ESTILOS PARA HERO SECTION*/
+
+/* Fondo tipo Spotify (https://www.spotify.com/ec/premium/)*/
+.hero-section-modern {
+  background: linear-gradient(to bottom, #af7c93, #121212);
+  min-height: 90vh;
+}
+
+/* Botón rosado para "OBTENER PREMIUM INDIVIDUAL" */
+.btn-premium-individual {
+  background-color: #f5dcdc;
+  color: black;
+  font-weight: bold;
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-premium-individual:hover {
+  background-color: #f1caca;
+  color: black;
+}
+
+/* Botón negro para "VER TODOS LOS PLANES" */
+.btn-outline-light {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Imagen rotada */
+.rotated-image {
+  transform: rotate(-15deg);
+  max-width: 80%;
+  height: auto;
+}
+
+/*ESTILOS PARA SECCION DE COMPARACION DE PLANES*/
+
+/* Elimina fondo blanco de la tabla */
+.table.text-white {
+  background-color: transparent !important;
+  /* Se fuerza una transparencia */
+}
+
+/* Quitar fondo a las celdas */
+.table.text-white th,
+.table.text-white td {
+  background-color: transparent !important;
+  color: white;
+  border: none;
+  padding: 1rem;
+}
+
+/* Líneas divisorias blancas */
+.table.text-white tbody tr {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Centrar texto en columnas Free y Premium */
+.table.text-white td.text-center {
+  font-size: 0.5rem;
+}
+
+/* Estilo para los enlaces dentro de la tabla */
+.table.text-white a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* ESTILOS PARA SECCION INFO PLANES */
+
+.metodo-pago {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+/* ESTILOS PARA SECCION TARJETAS DE PLANES */
+
+/*TARJETA 1*/
+.text-pink {
+  color: #f5c7cf;
+}
+
+.btn-pink {
+  background-color: #f5c7cf;
+  color: black;
+  font-weight: bold;
+}
+
+.btn-pink:hover {
+  background-color: #f1b8c1;
+  color: black;
+}
+
+/*TARJETA 2*/
+.text-purple {
+  color: #d49adb;
+}
+
+/*TARJETA 3*/
+.btn-warning {
+  font-weight: bold;
+}
+
+.btn-warning:hover {
+  background-color: #be920b;
+  color: black;
+}
+
+/*TARJETA 4*/
+.btn-info {
+  font-weight: bold;
+}
+
+.btn-info:hover {
+  background-color: #17a2b8 !important;
+  color: 2a2a2a;
+}
+
+.premium-benefits li {
+  position: relative;
+  padding-left: 1.0em;
+  margin-bottom: 0.5rem;
+}
+
+.premium-benefits li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* ESTILOS PARA SECCION ACORDEON */
+
+.accordion-button:hover {
+  background-color: #2a2a2a ;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #2a2a2a !important;
+  color: white;
+  box-shadow: none;
+}
+
+/* ESTILOS PARA FOOTER */
+
+footer .btn-outline-light {
+  background-color: #121212;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .btn-outline-light:hover {
+  background-color: #1db954;
+  border-color: #1db954;
+}
+
+.text-gray {
+  color: #8a8f8e;
+}
+
+.bg-grayf {
+  background-color: #121212
+}
+
+footer ul li a:hover {
+  color: #1db954 !important;
+}
+
+footer a.text-gray:hover {
+  color: #1db954 !important;
+}
+
+
+/*BORRADORES Y ESTILOS ANTERIORES*/
+
+/*
+.hero-section {
+  background: linear-gradient(135deg, #2a68da 0%, #000000 100%);
+  min-height: 90vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+  */
+
+/*
+section.bg-black img {
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+} 
+*/
+
+
+/*
+.navbar-nav a {
+  color: white;
+  text-decoration: underline;
+}
+*/
+
+/*
+.navbar {
+  background-color: #8b3232; 
+} 
+*/
+
+/*
+.table.text-white thead tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+} 
+*/
+
+/* Estilo de enlaces en la tabla 
+table a {
+  color: #000000;
+} 
+*/
+
+/*
+table a:hover {
+  color: #1db954;
+  text-decoration: none;
+} */
+
+/* fondo negro general 
+section.bg-black {
+  background-color: #ffffff;
+} 
+*/
+
+/* Estilo personalizado para la tabla de comparación 
+.table.text-white {
+  border-collapse: collapse;
+} 
+*/
+
+/*
+.table.text-white th,
+.table.text-white td {
+  border: none;              Eliminamos bordes de Bootstrap 
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+} 
+*/
+
+/*
+.table.text-white tbody tr {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);  Línea blanca suave entre filas 
+} 
+*/
+
+/*
+.table.text-white thead tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);  Línea bajo encabezado 
+} 
+*/
+
+/*
+.table.text-white a {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+} */
+
+/*
+.table.text-white a:hover {
+  color: #1db954;
+  text-decoration: none;
+} */
