@@ -246,5 +246,4 @@ function sumarNumeros(
     }
     return total;
 }
-sumarNumeros(1,2,3,4,5,2,1,2,3,4,5)
-
+sumarNumeros(1,2,3,4,5,2,1,2,3,4,5);
