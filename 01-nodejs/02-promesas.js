@@ -76,12 +76,14 @@ async function corregirLogicaPromesas() {
     try {
         const respuestaLeerArchivo = await leerArchivoPromesa('./a.txt');
         console.log('1) Respuesta Archivo', respuestaLeerArchivo);
-        const respuestaLeerArchivo2 = await leerArchivoPromesa('./a.txt'); 
-        console.log('2) Respuesta Archivo', respuestaLeerArchivo2);
-        await leerArchivo
+        const respuestaLeerArchivo2 = await leerArchivoPromesa('./a.txt');
+        console.log('2) Respuesta Archivo', respuestaLeerArchivo);
+        await leerArchivoPromesa('./a123.txt');
+    } catch (error){
+        console.log('3) ERROR', error);
     }
-    
 }
+corregirLogicaPromesas().then().catch(); // async awair transforma a la funcion en una PROMESA
     
 
 
