@@ -10,6 +10,7 @@ let nombres = "Erick";
 let nombreTS: string = ""; 
 console.log(typeof nombres, "nombres");
 let numeros = 1; 
+
 let numerosTS: number = 1;
 console.log(typeof numeros, "numeros"); 
 numeros = 1.1; //Decimales
@@ -20,6 +21,7 @@ let booleanos = true;
 let booleanosTS: boolean = false; 
 booleanos = false;
 console.log(typeof booleanos, "booleanos");
+
 let nulos = true; 
 let nulosTS: null = null;
 console.log(typeof nulos, "nulos"); 
