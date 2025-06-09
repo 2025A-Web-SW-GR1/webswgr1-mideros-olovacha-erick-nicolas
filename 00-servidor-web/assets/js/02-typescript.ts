@@ -197,8 +197,43 @@ arregloEjemplo.splice(
 
 // Operadores para trabajar arreglos
 
-// find
-//
+// find: Busca el primer elemento que cumpla con la condición en una array. Si lo encuentra, lo devuelve; si no, devuelve undefined.
+const numbersFind = [1, 2, 3, 4, 5];
+const found = numbersFind.find(num => num > 3);
+console.log(found);  // 4
+
+// findIndex: Similar a find, pero devuelve el índice del primer elemento que cumpla con la condición. Si no se encuentra, devuelve -1.
+const numbersFindIn = [1, 2, 3, 4, 5];
+const index = numbersFindIn.findIndex(num => num > 3);
+console.log(index);  // 3 (índice del número 4)
+
+// foreach: Itera sobre todos los elementos de un arreglo y ejecuta una función en cada uno de ellos. No devuelve nada.
+const numbersForEach = [1, 2, 3, 4, 5];
+numbersForEach.forEach(num => console.log(num));
+// Imprime: 1 2 3 4 5
+
+// map: Crea un nuevo arreglo con los resultados de aplicar una función a cada elemento del arreglo original.
+const numbersMap = [1, 2, 3, 4, 5];
+const doubled = numbersMap.map(num => num * 2);
+console.log(doubled);  // [2, 4, 6, 8, 10]
+
+// filter: Crea un nuevo arreglo con todos los elementos que cumplan con una condición especificada.
+const numbersFilter = [1, 2, 3, 4, 5];
+const evenNumbers = numbersFilter.filter(num => num % 2 === 0);
+console.log(evenNumbers);  // [2, 4]
+
+// some: Verifica si al menos un elemento del arreglo cumple con la condición. Devuelve true si lo encuentra, de lo contrario false.
+const numbersSome = [1, 2, 3, 4, 5];
+const hasEven = numbersSome.some(num => num % 2 === 0);
+console.log(hasEven);  // true
+// every: Verifica si todos los elementos del arreglo cumplen con la condición. Devuelve true si todos cumplen, de lo contrario false.
+const numbersEvery = [2, 4, 6, 8, 10];
+const allEven = numbersEvery.every(num => num % 2 === 0);
+console.log(allEven);  // true
+// reduce
+const numbersReduce = [1, 2, 3, 4, 5];
+const sum = numbersReduce.reduce((acc, num) => acc + num, 0);
+console.log(sum);  // 15
 
 // Funciones 
 function soloNumeros(a,b,c){
@@ -249,3 +284,39 @@ function sumarNumeros(
     return total;
 }
 sumarNumeros(1,2,3,4,5,2,1,2,3,4,5);
+
+// Destructuración de objetos
+const erickDest = {
+    nombre: "Erick",
+}; 
+const dayanaDest = {
+    nombre: "Dayana",
+    apellido: "Flores",
+};
+// merge de las dos variables (el orden importa)
+const erickDayanaDest = {
+    ...erickDest,
+    ...dayanaDest,
+}; 
+// { nombre: "Erick", apellido: "Flores"}
+const overrideDest = {
+    ...erickDayanaDest,
+    ...erickDest,
+    nombre: "Vicente",
+};
+
+// Destructuracion de arreglos
+const arregloDestUno = [1,2,3];
+const arregloDestDos = [4,5,6];
+// Merge
+const arregloDestUnoDest = [
+    ...arregloDestUno,
+    ...arregloDestDos,
+]; // [1,2,3,,4,5,6]
+const arregloDosUnoDest = [
+    ...arregloDestUno,
+    ...arregloDestDos,
+] // [4,5,6,1,2,3]
+// La destructuracion es una forma de clonacion
+const objetoACopiar = {a:1};
+const objetoCopiadoA = {...objetoACopiar}; 
