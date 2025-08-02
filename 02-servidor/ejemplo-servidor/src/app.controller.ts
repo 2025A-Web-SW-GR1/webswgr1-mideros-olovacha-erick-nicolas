@@ -1,39 +1,91 @@
-import { Controller, Get, Query, Param, Headers, Body, Post, HttpCode, NotFoundException } from '@nestjs/common';
+import { 
+  Controller, Get, Param, Query, Headers,
+  Post, Body, HttpCode, NotFoundException, Res, Session } from '@nestjs/common';
 import { AppService } from './app.service';
-
+/*
+type Casa = { 
+  id:number;
+  nombre:string;
+};
+*/ 
+interface Casa { 
+  id: number;
+  nombre: string;
+};
 @Controller()
 export class AppController {
+
+  public datos:Casa[] = [{ id:1, nombre:"Casa 1"}, { id:2, nombre:"Casa 2"}, { id:3, nombre:"Casa 3"}];
+
   constructor(private readonly appService: AppService) {}
+
+
+  @Get('casa')
+  obtenerCasas(
+    @Query('idCasa') idCasa: string,
+  ): Casa[] {
+    const idCasaNumber = Number(idCasa);
+    if(!idCasa) return this.datos;
+    const resultado = this.datos.filter(a => a.id === idCasaNumber);
+    if(resultado.length > 0){
+      return resultado;
+    }else{
+      throw new NotFoundException('No se encuentra')
+    }
+  }
+
 
   @Get()
   getHello(): string {
     return this.appService.getHello();
   }
 
-    @Post('/ejemplo/:id') // /ejemplo/1?hola=mundo
-    @HttpCode(200)
-    ejemplo(
-      @Param('id') id, // Parametro de Ruta
-      @Query('hola') hola, // Parametro de consulta llamado 'hola'
-      @Headers('escuela') escuela, // Cabecera con nombre 'escuela'
-      @Body('monto') monto, // Cuerpo con contenido 'monto'
+  @Post('/ejemplo/:id') // /ejemplo/1?hola=mundo
+  @HttpCode(200)
+  ejemplo(
+    @Param('id') id, // Parametro de Ruta llamado 'id'
+    @Query('hola') hola, // Parametro de consulta llamado 'hola'
+    @Headers('escuela') escuela, // Cabecera con nombre 'escuela'
+    @Body('monto') monto, // Parametro de cuerpo llamado 'monto'
   ): string {
-    return id + hola + ' Funcionando ' + escuela + monto
-    // if(){}else{
-    // throw NotFoundException('No encontrado')}
+    return id + hola + ' Funcionando ' + escuela + monto;
+    // if(){} else{
+    // throw NotFoundException('No encontrado')  }
   }
 
-  @Get('/casa')
-  @HttpCode(200)
-  ejercicio(
-    @Query('idCasa') idCasa,
-  ): string{
-    const casa:Object[] = [{id:1, nombre:"Casa1"}, {id:2, nombre:"Casa2"}];
-    if(idCasa == 1 || idCasa == 2){
-      return JSON.stringify(casa[idCasa-1]); 
-    }else{
-      throw new NotFoundException('No encontrado'); 
+  /** 
+    // LoginMetodo
+  @Post('login')
+  async login(
+    @Body() login: { username: string; password: string; rest: boolean; },
+    @Session() session: Record<string, any>,
+    @Res() res: any
+  ) { // Using @Session() decorator
+    try {
+      // buscamos al usuario
+      const respuesta = await this.casaService.buscarUnoPorUsername(login.username);
+      // Verificamos que el password sea el mismo
+      if (respuesta.password === login.password) {
+        session.user = {
+          ...respuesta
+        };
+        // Si es rest respondemos con un JSON
+        if (login.rest) {
+          return {
+            mensaje: 'Usuario logeado exitosamente'
+          };
+        }
+        // Si es una peticion normal redirigimos a la pantalla de sesion
+        res.redirect('/auth/sesion');
+      } else {
+        res.redirect('/auth/login-vista?mensaje="Usuario y password no coinciden"');
+      }
+    } catch (e) {
+      console.error('No se encontro usuario');
+      res.redirect('/auth/login-vista?mensaje="Usuario no encontrado"');
     }
   }
 
+  **/
+ 
 }
